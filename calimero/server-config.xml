@@ -79,5 +79,4 @@
 		-->
 	</serviceContainer>
 
-	<!-- Add next service container (optional) -->
 </knxServer>
