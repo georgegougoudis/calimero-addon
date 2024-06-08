@@ -3,7 +3,7 @@ name: Calimero Daemon
 version: "0.4.7"
 slug: calimero
 description: Calimero daemon you can use to create a KNX/IP gateway via TPUART or USB bus adapters
-url: https://github.com/da-anda/hass-io-addons/tree/main/knxd
+url: https://github.com/georgegougoudis/calimero-addon
 arch:
   - armhf
   - armv7
@@ -43,5 +43,4 @@ ports:
 ports_description:
   "6720/tcp": "Required by knx interface and being able to access the KNX bus via ETS"
   "3671/udp": "Required by knx interface and being able to access the KNX bus via ETS"
-image: "ghcr.io/da-anda/hass-io-addons-{arch}-addon-knxd"
 uart: true
