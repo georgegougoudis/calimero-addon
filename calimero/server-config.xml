@@ -7,7 +7,7 @@
 	<!-- Provides the KNXnet/IP-side configuration for access to one KNX subnet -->
 	<serviceContainer activate="true" routing="true" networkMonitoring="true"
 		udpPort="3671" listenNetIf="eth0">
-		<knxAddress type="individual">0.0.1</knxAddress>
+		<knxAddress type="individual">0.0.0</knxAddress>
 		<routing/>
 
 		<knxSubnet type="ft12" medium="tp1" format="cemi">/dev/ttyAMA0</knxSubnet>
