@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Calimero Daemon
-version: "0.4.7"
+version: "0.0.1"
 slug: calimero
 description: Calimero daemon you can use to create a KNX/IP gateway via TPUART or USB bus adapters
 url: https://github.com/georgegougoudis/calimero-addon
