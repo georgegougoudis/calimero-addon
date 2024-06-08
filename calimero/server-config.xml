@@ -6,11 +6,11 @@
 
 	<!-- Provides the KNXnet/IP-side configuration for access to one KNX subnet -->
 	<serviceContainer activate="true" routing="true" networkMonitoring="true"
-		udpPort="3671" listenNetIf="end0">
-		<knxAddress type="individual">7.1.0</knxAddress>
+		udpPort="3671" listenNetIf="eth0">
+		<knxAddress type="individual">0.0.1</knxAddress>
 		<routing/>
 
-		<knxSubnet type="tpuart" medium="tp1">/dev/ttyACM0</knxSubnet>
+		<knxSubnet type="ft12" medium="tp1">/dev/ttyAMA0</knxSubnet>
 		<!-- latencyTolerance specifies the time window for accepting secure multicasts,
 			depends on max. end-to-end network latency (usually [500 .. 8000] ms) -->
 		<!-- <routing latencyTolerance="1000">224.0.23.12</routing> -->
@@ -60,10 +60,11 @@
 
 		<!-- Additional KNX individual addresses assigned to client KNXnet/IP connections (optional) -->
 		<additionalAddresses>
-			<knxAddress type="individual">7.1.10</knxAddress>
-			<knxAddress type="individual">7.1.11</knxAddress>
-			<knxAddress type="individual">7.1.12</knxAddress>
-			<knxAddress type="individual">7.1.13</knxAddress>
+			<knxAddress type="individual">0.0.240</knxAddress>
+			<knxAddress type="individual">0.0.241</knxAddress>
+			<knxAddress type="individual">0.0.242</knxAddress>
+			<knxAddress type="individual">0.0.243</knxAddress>
+			<knxAddress type="individual">0.0.244</knxAddress>
 		</additionalAddresses>
 
 		<!-- Cyclically transmit date (11.001), time (10.001), or date+time (19.001) information on the subnetwork
