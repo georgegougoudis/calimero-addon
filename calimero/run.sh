@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-cd /usr/app
+cd "/usr/app/calimero-server-3.0-SNAPSHOT"
 echo "Running Server"
-ls /usr/app
-java -cp "./*" io.calimero.server.Launcher server-config.xml
+java -cp "./*" io.calimero.server.Launcher /usr/app/server-config.xml
