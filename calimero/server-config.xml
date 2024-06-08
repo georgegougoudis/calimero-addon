@@ -9,6 +9,8 @@
 		udpPort="3671" listenNetIf="any">
 		<knxAddress type="individual">7.1.0</knxAddress>
 		<routing/>
+
+		<knxSubnet type="tpuart" medium="tp1">/dev/ttyACM0</knxSubnet>
 		<!-- latencyTolerance specifies the time window for accepting secure multicasts,
 			depends on max. end-to-end network latency (usually [500 .. 8000] ms) -->
 		<!-- <routing latencyTolerance="1000">224.0.23.12</routing> -->
@@ -39,9 +41,9 @@
 		<!-- KNX USB: specify the vendorId:productId or vendor name, e.g., siemens -->
 		<!-- <knxSubnet  type="usb" medium="tp1">siemens</knxSubnet> -->
 		<!-- if USB device identifier is left empty, the first found KNX USB device is used -->
-		<knxSubnet type="usb" medium="tp1"></knxSubnet>
+		<!-- knxSubnet type="usb" medium="tp1"></knxSubnet>
 
-		<!-- <knxSubnet type="tpuart" medium="tp1">/dev/ttyACM0</knxSubnet> -->
+		<knxSubnet type="tpuart" medium="tp1">/dev/ttyACM0</knxSubnet>
 		<!-- <knxSubnet type="virtual">virtual-subnet</knxSubnet> -->
 		<!-- <knxSubnet type="emulate">emulate-subnet</knxSubnet> -->
 		<!-- <knxSubnet type="user" class="my.knx.NetworkLink">o1,i2|i4</knxSubnet> -->

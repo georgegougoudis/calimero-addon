@@ -7,4 +7,4 @@ COPY server-config.xml /usr/app/server-config.xml
 
 COPY run.sh /
 RUN chmod a+x /run.sh
-CMD [ "/run.sh" ]
+#CMD [ "/run.sh" ]
