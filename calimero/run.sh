@@ -2,5 +2,7 @@
 cd "/usr/app/calimero-server-3.0-SNAPSHOT/bin"
 echo "Running Server"
 
-./calimero-server /usr/app/server-config.xml
-#java -cp "./*" io.calimero.server.Launcher /usr/app/server-config.xml
+setserial /dev/ttyAMA0 low_latency
+export CALIMERO_SERVER_OPTS="-Dio.calimero.serial.tpuart.maxInterByteDelay=20000"
+
+./calimero-server --no-stdin /usr/app/server-config.xml
