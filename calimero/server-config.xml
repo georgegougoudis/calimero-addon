@@ -8,9 +8,9 @@
 	<!-- Provides the KNXnet/IP-side configuration for access to one KNX subnet -->
 	<serviceContainer activate="true" routing="true" networkMonitoring="true"
 		udpPort="3671" listenNetIf="eth0">
-		<knxAddress type="individual">0.0.0</knxAddress>
+		<knxAddress type="individual">1.1.0</knxAddress>
 		<routing/>
-
+		<disruptionBuffer expirationTimeout="30" udpPort="5555-5559" />
 		<knxSubnet type="tpuart">/dev/ttyAMA0</knxSubnet>
 		<groupAddressFilter>
 			<!-- <knxAddress type="group">2/1/1</knxAddress> -->
@@ -20,11 +20,11 @@
 
 		<!-- Additional KNX individual addresses assigned to client KNXnet/IP connections (optional) -->
 		<additionalAddresses>
-			<knxAddress type="individual">0.0.240</knxAddress>
-			<knxAddress type="individual">0.0.241</knxAddress>
-			<knxAddress type="individual">0.0.242</knxAddress>
-			<knxAddress type="individual">0.0.243</knxAddress>
-			<knxAddress type="individual">0.0.244</knxAddress>
+			<knxAddress type="individual">1.1.240</knxAddress>
+			<knxAddress type="individual">1.1.241</knxAddress>
+			<knxAddress type="individual">1.1.242</knxAddress>
+			<knxAddress type="individual">1.1.243</knxAddress>
+			<knxAddress type="individual">1.1.244</knxAddress>
 		</additionalAddresses>
 	</serviceContainer>
 
