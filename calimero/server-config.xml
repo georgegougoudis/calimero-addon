@@ -11,7 +11,7 @@
 		<knxAddress type="individual">1.1.0</knxAddress>
 		<routing/>
 		<disruptionBuffer expirationTimeout="30" udpPort="5555-5559" />
-		<knxSubnet type="ft12" >/dev/ttyAMA0</knxSubnet>
+		<knxSubnet type="ft12" format="cemi" medium="tp1" knxAddress="0">/dev/ttyAMA0</knxSubnet>
 		<groupAddressFilter>
 			<!-- <knxAddress type="group">2/1/1</knxAddress> -->
 			<!-- <knxAddress type="group">2/1/0</knxAddress> -->
