@@ -32,6 +32,8 @@ schema:
   interface: "list(tpuart|tpuart-ip|usb|ft12|ft12cemi|ncn5120|ncn5120-ip|dummy)"
   device: "device?"
   log_error_level: "list(warning|error|fatal|note|info|debug)"
+  discover: "bool?"
+  disruption_buffer: "bool?"
   usb_filters: "str?"
   ip_address: "str?"
   dest_port: "port?"
