@@ -7,11 +7,11 @@
 
 	<!-- Provides the KNXnet/IP-side configuration for access to one KNX subnet -->
 	<serviceContainer activate="true" routing="true" networkMonitoring="true"
-		udpPort="3671" listenNetIf="end0">
+		udpPort="3671" listenNetIf="eth0">
 		<knxAddress type="individual">1.1.0</knxAddress>
 		<routing/>
 		<disruptionBuffer expirationTimeout="30" udpPort="5555-5559" />
-		<knxSubnet type="ft12" medium="tp1" format="cemi" knxAddress="0">/dev/ttyAMA0</knxSubnet>
+		<knxSubnet type="tpuart" medium="tp1">/dev/ttyAMA0</knxSubnet>
 		<groupAddressFilter>
 			<!-- <knxAddress type="group">2/1/1</knxAddress> -->
 			<!-- <knxAddress type="group">2/1/0</knxAddress> -->
