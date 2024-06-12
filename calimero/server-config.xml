@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Calimero server settings (required for startup) -->
-<knxServer name="knx-server" friendlyName="KNX IP Server">
+<knxServer name="knx-server" friendlyName="Showroom KNX/IP Server">
 	<!-- KNXnet/IP search & discovery -->
 	<discovery listenNetIf="all" outgoingNetIf="all" activate="true" />
 
 	<!-- Provides the KNXnet/IP-side configuration for access to one KNX subnet -->
 	<serviceContainer activate="true" routing="true" networkMonitoring="true"
-		udpPort="3671" listenNetIf="eth0">
+		udpPort="3671" listenNetIf="enu1u1">
 		<knxAddress type="individual">1.1.0</knxAddress>
 		<routing/>
 		<disruptionBuffer expirationTimeout="30" udpPort="5555-5559" />
